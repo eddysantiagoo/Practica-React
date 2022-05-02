@@ -8,7 +8,7 @@ export function MovieCard({ movie }) {
             width={230}
             height={345}
             className={styles.movieImage}src={imagenURL} alt={movie.title} />
-            <div>{movie.title}</div>
+            <div className={styles.titulo}>{movie.title}</div>
         </li>
     );
 }

@@ -1,9 +1,10 @@
 import { MoviesGrid } from "./components/MoviesGrid";
+import styles from "./App.module.css"
 
 export function App (){
     return <div>
         <header>
-            <h1>Peliculitas</h1>
+            <h1 className={styles.title}>Peliculitas</h1>
         </header>
             
         <main>
