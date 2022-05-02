@@ -1,6 +1,7 @@
 .movieCard {
     list-style: none;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 .movieImage {
@@ -10,9 +11,17 @@
 
 .titulo{
     color: #f8f8f8; 
-    font-family: 'Raleway',sans-serif; 
+    font-family: 'Raleway',sans-serif;
+    font-weight: bold; 
     font-size: 18px; 
     font-weight: 500; 
     line-height: 32px; 
     margin: 0 0 24px;
+}
+
+@media (max-width: 560px){
+    .movieImage{
+        width: 100%;
+        height: auto;
+    }
 }
