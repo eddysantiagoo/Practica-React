@@ -1,8 +1,11 @@
-export function MovieCard ({ movie }) {
-    const imagenURL = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
-    return  <li>
-        <img src={imagenURL} alt={movie.title} />
-        {movie.title}
-        </li>
+import styles from "../MovieCard.module.css"
 
+export function MovieCard({ movie }) {
+    const imagenURL = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+    return (
+        <li className={styles.movieCard}>
+            <img className={styles.movieImage}src={imagenURL} alt={movie.title} />
+            <div>{movie.title}</div>
+        </li>
+    );
 }
