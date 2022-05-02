@@ -1,10 +1,11 @@
 import movies from "../movies"
+import { MovieCard } from "./MovieCard";
 
 export function MoviesGrid() {
     return (
         <ul>
             {movies.map((movie) => (
-                <li key={movie.id}>{movie.title}</li>
+                <MovieCard key={movie.id} movie={movie} />
             ))}
         </ul>
     );
