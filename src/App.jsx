@@ -9,7 +9,5 @@ export function App (){
         <main>
           <MoviesGrid />
         </main>
-
-
     </div>;
 }
