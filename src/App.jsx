@@ -17,15 +17,12 @@ export function App (){
     <Router>
         <header>
           <Link to="/"> <h1 className={styles.title}>Peliculitas</h1> </Link>  
-            <Link to="/">Home</Link>
-            <br />
-            <Link to="/movie">Movie</Link>
         </header>
             
         <main>
          <Routes>
           {/* <Route exact path="/movie"> <MovieDetails /> </Route> */}
-          <Route exact path='/movie' element={<MovieDetails/>}></Route>
+          <Route exact path='/movie/:movieId' element={<MovieDetails/>}></Route>
           <Route exact path='/' element={<LandingPage/>}></Route>
          </Routes>
         </main>

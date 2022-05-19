@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.movieCard:hover{
+    opacity: 0.8;
+  
+}
+
+
 .movieImage {
     border-radius: 20px;
     background-color: aliceblue;
