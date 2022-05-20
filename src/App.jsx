@@ -22,7 +22,7 @@ export function App (){
         <main>
          <Routes>
           {/* <Route exact path="/movie"> <MovieDetails /> </Route> */}
-          <Route exact path='/movie/:movieId' element={<MovieDetails/>}></Route>
+          <Route exact path='/movies/:movieId' element={<MovieDetails/>}></Route>
           <Route exact path='/' element={<LandingPage/>}></Route>
          </Routes>
         </main>
