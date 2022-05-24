@@ -1,3 +1,10 @@
-# Practicas con React
-### Practicas con React Js vamo
-Creación de una pagina web para hacer un simple listado de peliculas implementando como PATH un archivo .json y usando la tecnologia de React para el manejo de componentes de esta.
+# Listado de peliculas utilizando React
+Creación de una pagina web utilizando React para realizar un listado de peliculas y detalles de estas mismas y ademas de esto implementando la [API](https://developers.themoviedb.org/4/getting-started) brindada por: www.themoviedb.org.
+
+## Tecnologias
+
+- React
+
+## Demo
+
+En trabajo...
