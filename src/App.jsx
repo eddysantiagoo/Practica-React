@@ -16,7 +16,8 @@ export function App (){
     
     <Router>
         <header>
-          <Link to="/"> <h1 className={styles.title}>Peliculitas</h1> </Link>  
+          <Link to="/"> <h1 className={styles.title}>Peliculitas</h1> </Link>
+          <p className={styles.author}>Eddy Santiago</p>
         </header>
             
         <main>

@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
 .movieCard {
     list-style: none;
     font-size: 1.4rem;
     text-align: center;
-}
-
-.movieCard:hover{
-    opacity: 0.8;
-  
+    transition: transform 500ms;
 }
 
 
@@ -17,12 +15,18 @@
 
 .titulo{
     color: #f8f8f8; 
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold; 
     font-size: 18px; 
     font-weight: 500; 
     line-height: 32px; 
     margin: 0 0 24px;
+}
+
+.movieCard:focus,
+.movieCard:hover {
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 @media (max-width: 560px){

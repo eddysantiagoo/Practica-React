@@ -1,4 +1,7 @@
-.title{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+
+/* .title{
     text-align: center;
     color: #ffffff; 
     font-family: 'Raleway',sans-serif; 
@@ -6,8 +9,65 @@
     font-weight: 800; 
     line-height: 36px; 
     margin: 50 0 24px;
+    margin-top: 2rem;
+
+    padding-bottom: 2rem;
 
     
     text-shadow: rgba(0,153,255,0.99) 0px 0px 32px;
+}  */
+
+.author {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: -1.55em;
+    font-size: 1.70em;
+
+    background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+    background-size: 300%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: author 10s ease-in-out infinite;
+	-moz-animation: author 10s ease-in-out infinite;
+	-webkit-animation: author 10s ease-in-out infinite;
 }
 
+.title{
+
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;  
+
+
+  background-image: linear-gradient(
+    -225deg,
+    #870000 0%,
+    #DBD5A4 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s forwards;
+
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+@keyframes author {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
