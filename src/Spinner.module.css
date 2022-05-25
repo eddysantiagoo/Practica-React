@@ -1,0 +1,10 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+    margin-top: 13rem;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
