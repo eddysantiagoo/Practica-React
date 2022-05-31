@@ -29,3 +29,8 @@
     font-family: 'Quicksand', sans-serif;
 
 }
+
+.searchInput:focus,
+.searchButton:focus{
+    outline: none;
+}

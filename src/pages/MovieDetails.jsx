@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react/cjs/react.development";
 import { get } from "../utils/htttpClient";
 import { useState } from "react";
-import Spinner from "../components/Spinner";
+import Spinner from "../components/Spinner"
 
 
 export function MovieDetails(){
@@ -12,6 +12,7 @@ export function MovieDetails(){
     const { movieId } = useParams();
     const [isLoading, setIsLoading] = useState(true);
     const [movie, setMovie] = useState(null);
+
 
     useEffect(() => {
         setIsLoading(true);
@@ -42,6 +43,9 @@ export function MovieDetails(){
                <strong>Genres: </strong> {movie.genres.map(genres => genres.name + " ")}
             </p>
             <p><strong>Decription: </strong>{movie.overview}
+            </p>
+            <p>
+               <strong>Date: </strong> {movie.release_date}
             </p>
         </div>
 
