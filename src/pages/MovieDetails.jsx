@@ -40,7 +40,7 @@ export function MovieDetails(){
              <strong>Title: </strong>{movie.title}
             </p>
             <p>
-               <strong>Genres: </strong> {movie.genres.map(genres => genres.name + " ")}
+               <strong>Genres: </strong> {movie.genres.map(genres => genres.name + "-")}
             </p>
             <p><strong>Decription: </strong>{movie.overview}
             </p>
