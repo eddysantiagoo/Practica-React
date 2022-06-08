@@ -1,5 +1,6 @@
 import { MoviesGrid } from "../components/MoviesGrid"
 import Search from "../components/Search"
+import { useDebounce } from "../hooks/useDebounce";
 import useQuery from "../hooks/useQuery";
 
 export function LandingPage (){
@@ -7,8 +8,12 @@ export function LandingPage (){
     const query = useQuery();
     const search = query.get("search");
 
-    return <div>
+    const debouncedSearch = useDebounce(search, 300);
+    
+    return (
+    <div>
         <Search />
-        <MoviesGrid key={search} />
-        </div> 
+        <MoviesGrid key={debouncedSearch}/>
+    </div> 
+    );
 }
