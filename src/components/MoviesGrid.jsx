@@ -1,5 +1,5 @@
 import { MovieCard } from "./MovieCard";
-import styles from "../MovieGrid.module.css"
+import styles from "./MovieGrid.module.css"
 import { useEffect } from "react";
 import { useState } from "react";
 import { get } from "../utils/htttpClient";

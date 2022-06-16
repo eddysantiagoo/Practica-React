@@ -1,5 +1,5 @@
 import { ThreeDots } from 'react-loading-icons'
-import styles from "../Spinner.module.css"
+import styles from "./Spinner.module.css"
 
 export default function Spinner() {
   return (

@@ -1,4 +1,4 @@
-import styles from "../MovieDetails.module.css"
+import styles from "../components/MovieDetails.module.css";
 import movie from "../movie.json"
 import { useParams } from "react-router-dom";
 import { useEffect } from "react/cjs/react.development";

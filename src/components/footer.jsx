@@ -1,4 +1,4 @@
-import styles from "../MovieDetails.module.css"
+import styles from "./MovieDetails.module.css"
 
 export default function Footer() {
   return (

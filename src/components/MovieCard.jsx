@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "../MovieCard.module.css";
+import styles from "./MovieCard.module.css";
 import getMovieImage from "../utils/getMovieImg";
 
 <img src="placeholder.jpg" alt="" />;
