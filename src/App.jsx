@@ -9,6 +9,8 @@ import {
   } from "react-router-dom";
 import { MovieDetails } from "./pages/MovieDetails";
 import { LandingPage } from "./pages/LandingPage";
+import footer from "./components/footer";
+
   
 
 export function App (){
@@ -27,7 +29,7 @@ export function App (){
           <Route exact path='/' element={<LandingPage/>}></Route>
          </Routes>
         </main>
-
+      <footer/>
     </Router>
     
     );

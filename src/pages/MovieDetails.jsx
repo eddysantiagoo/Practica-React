@@ -6,6 +6,7 @@ import { get } from "../utils/htttpClient";
 import { useState } from "react";
 import Spinner from "../components/Spinner"
 import getMovieImage from "../utils/getMovieImg";
+import Footer from "../components/footer";
 
 
 export function MovieDetails(){
@@ -33,8 +34,7 @@ export function MovieDetails(){
     }
 
     const imagenURL = getMovieImage(movie.poster_path, 500);
-    return <div className={styles.detailsContainer}>
-        
+    return  <div className={styles.detailsContainer}>
         <img className={`${styles.col} ${styles.movieImage}`} src={imagenURL} alt={movie.title} />
         <div className={`${styles.col} ${styles.movieDetails}`}>
             <p className={styles.firstItem}>
@@ -48,7 +48,7 @@ export function MovieDetails(){
             <p>
                <strong>Date: </strong> {movie.release_date}
             </p>
-        </div>
-
+        </div>   
+        <Footer/>
     </div>
 }
