@@ -29,7 +29,6 @@ export function App (){
           <Route exact path='/' element={<LandingPage/>}></Route>
          </Routes>
         </main>
-      <footer/>
     </Router>
     
     );
